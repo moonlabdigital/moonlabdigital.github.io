@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+    <script src="https://kit.fontawesome.com/7ee0377139.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo"><a href="../index.html"><img id="burrito-img" src="../images/burrito_logo.png" alt="Burrito spot logo"></a></div>
+        <ul id="nav-links">
+            <li class="nav-link"><a href="../index.html">Home</a></li>
+            <li class="nav-link"><a href="../index.html#about">About</a></li>
+            <li class="nav-link"><a href="../index.html#order-wrapper">Order Online</a></li>
+            <li class="nav-link"><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars fa-2x"></i>
+        </a>
+    </div>
+    <main id="contact-wrapper">
+        <section id="contact-container">
+            <div id="contact-header">
+                <h2>Contact Us</h2>
+                <h3>Thoughts? Questions? Critiques? We'd love to hear what you have to say!</h3>
+            </div>
+            <form action="#" id="contact-form">
+                <label for="name"><h3>Your Name</h3></label>
+                <input type="text" id="name" name="name" placeholder="Your name"><br>
+                <label for="name"><h3>Email Address</h3></label>
+                <input type="email" id="email" name="email" placeholder="youremail@email.com"><br>
+                <label for="subject"><h3>Your Message</h3></label>
+                <textarea id="subject" name="subject" placeholder="Your Message..."></textarea>
+                <button class="sub-bttn" type="submit">Submit</button>
+
+            </form>
+        </section>
+    </main>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../scripts/order.js"></script>
+    <script src="../scripts/menu.js"></script>
+</body>
+</html>

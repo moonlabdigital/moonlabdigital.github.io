@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+    <script src="https://kit.fontawesome.com/7ee0377139.js" crossorigin="anonymous"></script>
+    <title>Burrito Spot | Order Online</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo"><a href="../index.html"><img id="burrito-img" src="../images/burrito_logo.png" alt="Burrito spot logo"></a></div>
+        <ul>
+            <li class="nav-link"><a href="#top">Home</a></li>
+            <li class="nav-link"><a href="#about">About</a></li>
+            <li class="nav-link"><a href="#order-wrapper">Order Online</a></li>
+            <li class="nav-link"><a href="#">Contact</a></li>
+        </ul>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars fa-2x"></i>
+      </a>
+    </div>
+    <main>
+        <section id="menu-wrapper">
+            <form id="order-menu">
+                <label for="base">Pick Your Base</label>
+                <select name="base" id="base">
+                  <option value="white">White Rice</option>
+                  <option value="brown">Brown Rice</option>
+                  <option value="null">No Base</option>
+                </select>
+                <br><br>
+                <label for="protein">Pick Your Protein</label>
+                <select name="protein" id="protein">
+                  <option value="steak">Steak</option>
+                  <option value="chicken">Chicken</option>
+                  <option value="beef">Ground Beef</option>
+                  <option value="carne">Carne Asada</option>
+                  <option value="barbecoa">Barbecoa</option>
+                  <option value="veg">Roasted Vegetable</option>
+                </select>
+                <br><br>
+                <label for="protein">Beans</label>
+                <select name="beans" id="beans">
+                    <option value="pinto">Pinto</option>
+                    <option value="black">Black</option>
+                    <option value="null">No Beans</option>
+                  </select>
+                  <br><br>
+                <input id="sub-bttn" type="submit" value="Submit">
+              </form>
+        </section>
+    </main>
+    
+</body>
+</html>

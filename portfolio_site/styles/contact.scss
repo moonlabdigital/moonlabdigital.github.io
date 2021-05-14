@@ -1,0 +1,85 @@
+@import 'style';
+
+#contact-wrapper{
+    min-height: 100vh;
+}
+
+#contact-container{
+    @include format(center, center, column);
+    width: 50%;
+    margin-top: 3rem;
+
+    h1{
+        align-self: flex-start;
+    }
+    p{
+        margin: 1rem 0;
+    }
+}
+
+#contact-form{
+    @include format(center, center, column);
+    width: 100%;
+    gap: 1rem; 
+    label{
+        font-weight: 900;
+        font-family: 'Poppins', sans-serif;
+        font-size: 90%;
+    }
+    input{
+        width: 100%;
+        max-width: 300px;
+        height: 2rem;
+        padding: .5rem 0;
+        border: none;
+        background: rgb(235, 235, 235);
+    }
+    option, select, input, textarea{ 
+        font-family: 'Poppins', sans-serif;
+        font-size: 120%;
+    }
+    select{
+        width: 100%; 
+    }
+    textarea{
+        background: rgb(235, 235, 235);
+        border: none;
+        height: 10vh;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    input:focus, textarea:focus, select:focus, option:focus{
+        outline: none;
+    }
+
+    .cont-bttn{
+        align-self: flex-start;
+    }
+}
+
+.inputs{
+    @include format(space-between, center, row);
+    width: 100%;
+    gap: 1rem;
+}
+
+.input-container{
+    @include format(flex-start, center, column);
+    width: 50%;
+    background: rgb(235, 235, 235);
+    border: 2px solid rgb(235, 235, 235);
+    border-radius: .5rem;
+    border-collapse: collapse;
+    padding: .8rem; 
+    color: $black; 
+    transition: .3s;
+    &:hover{
+        border: 2px solid $blue;  
+        transition: .3s;
+    }
+}
+
+#message{
+    width: 100%;
+}

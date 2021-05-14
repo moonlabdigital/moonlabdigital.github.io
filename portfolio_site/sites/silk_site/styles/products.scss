@@ -1,0 +1,74 @@
+@use 'home';
+@import 'home.scss';
+
+main{
+    width: 100%;
+    background: linear-gradient($peach, $white);
+}
+
+#product-wrapper{
+    @include format(100%, 100vh, column, center);
+    //height: 100vh;
+    background-image: url(../images/frond.png);
+    background-size: cover;
+    background-position-y: -20em;
+    background-position-x: -35em;
+    //background-position: fixed;
+    background-repeat: no-repeat;
+    i{
+        //margin: 1rem;
+        color: rgba(73, 73, 73, .3);
+        z-index: 3;
+
+        &:hover{
+            color: rgba(73, 73, 73, 1);
+            cursor: pointer;
+            transition: .3s;
+        }
+    }
+}
+#product-container{
+    @include format(80%, none, row, center);
+    align-items: center;
+    //background: green;
+}
+#product-img{
+    width: 100%; 
+    max-width: 230px;
+    //min-width: 200px;
+    //min-height: 100px;
+    height: auto;
+}
+
+#product-info{
+    //background: red;
+    @include format(50%, auto, column, center);
+    min-width: 25ch;
+    margin-left: 3rem;
+    h2{
+        text-align: center;
+        padding: 0 0 1rem 0; 
+    }
+    h3{
+        max-width: 45ch;
+    }
+}
+
+#sub-bttn{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2em;
+    font-weight:bolder;
+    color: $green;
+    background: transparent;
+    padding: 1rem;
+    margin: 1em;
+    border: 2px solid $green;
+    border-radius: 3em;
+    &:hover{
+        background: transparent; 
+        border-color: $white;
+        color: $white;
+        cursor: pointer;
+        transition: .3s;
+    }
+}

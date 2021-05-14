@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Moonlab Digital | Contact</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="../images/orbit-logo.ico"/>
+    <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="stylesheet" href="../styles/queries.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@400&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/7ee0377139.js" crossorigin="anonymous"></script>
+    <script src="../scripts/send.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_l2zitVQFPeMwNKGPMEbU7");
+    })();
+    </script>
+</head>
+<body>
+    <nav>
+        <div id="nav-container">
+            <a href="../index.html"><img id="logo" src="../images/moonlab_logo.png" alt="moonlab logo"></a> 
+            <ul id="nav-links">
+                <li class="nav-link"><a href="../index.html">Home</a></li>
+                <li class="nav-link"><a href="contact.html">Contact</a></li>
+                <li class="nav-link"><a href="portfolio.html">Portfolio</a></li>
+                <li class="nav-link"><a href="../index.html#about-container">About</a></li>
+            </ul>
+        </div>
+        <div id="mobile-menu-container">
+            <div id="b1" class="bar "></div>
+            <div id="b2" class=" bar mid"></div>
+            <div id="b3" class="bar "></div>
+        </div>
+        <div id="expand-menu"></div>
+    </nav>
+    <main>
+        <section class="block" id="contact-wrapper">
+            <div class="container" id="contact-container">
+            <div id="contact-header">
+                <h1>Let's build your <mark>website</mark></h1>
+                <p>Whether its a business, online store, landing page, blog, 
+                    or non-profit, Moonlab has you covered. Tell us a little about 
+                your ideal website below, and let's get started!</p>
+            </div>
+                <div id="contact-form">
+                    <div class="inputs">
+                        <div class="input-container">
+                            <label for="name">Name</label>
+                            <input id = "name" type="text">
+                        </div>  
+                        <div class="input-container">
+                            <label for="email">Email</label>
+                            <input id = "email" type="text">
+                        </div>
+                    </div>
+                    <div class="inputs">  
+                        <div class="input-container">
+                            <label for="phone">Phone number (optional)</label>
+                            <input id = "phone" type="text">
+                        </div>
+                        <div class="input-container">
+                            <label for="option">What kind of project is this?</label>
+                            <select id = "project" name="project">
+                                <option value="original">Original site design and implementation</option>
+                                <option value="redesign">Redesign an existing site</option>
+                                <option value="existing">Implement an existing design</option>
+                                <option value="design">Original site design (non-functional mockup)</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="inputs">
+                    <div class="input-container" id="message">
+                        <label for="message">How can we help?</label>
+                        <textarea id = "msg" name="message" ></textarea>
+                    </div>
+                    </div>
+                    <button onclick="sendMail()" class="cont-bttn">Submit</button>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div id="footer-container">
+                <ul id="foot-list">
+                    <li><i class="fab fa-linkedin-in"></i></li>
+                    <li>bryant@moonlabdigital.com</li>
+                </ul>
+                <h4>Copyright: Moonlab Digital LLC</h4>
+            </div>
+        </footer>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../scripts/effects.js"></script>
+</body>
+</html>

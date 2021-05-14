@@ -1,0 +1,43 @@
+@import 'style';
+
+#portfolio-wrapper{
+    justify-content: flex-start;
+    //background: red; 
+}
+
+#portfolio-container{
+    justify-content: center;
+    flex-direction: column;
+    width: 95%;
+
+    h1{
+        padding: 2rem;
+    }
+}
+
+.portfolio-row{
+    @include format(center, center, column);
+    flex-wrap: wrap;
+    flex: 1 1 25em;
+    width: 100%;
+    //background: green;
+}
+
+.portfolio-image-container{
+    @include format(flex-start, flex-start, column);
+}
+
+.portfolio-image{
+    width: 100%; 
+    max-width: 1000px;
+    margin: 0 0 2rem 0;
+    border: 2px solid $black; 
+    border-radius: .7rem;
+    transition: .3s;
+
+    &:hover{
+        transition: .3s;
+        border: 2px solid $blue; 
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}

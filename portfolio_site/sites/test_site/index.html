@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/7ee0377139.js" crossorigin="anonymous"></script>
+    <title>Burrito Spot</title>
+</head>
+<body>
+    <div id="drk-wrapper">
+    </div>
+    <div class="nav">
+        <div class="logo"><a href="index.html"><img id="burrito-img" src="./images/burrito_logo.png" alt="Burrito spot logo"></a></div>
+        <ul id = "nav-links">
+            <li class="nav-link"><a href="#top">Home</a></li>
+            <li class="nav-link"><a href="#about">About</a></li>
+            <li class="nav-link"><a href="#order-wrapper">Order Online</a></li>
+            <li class="nav-link"><a href="./pages/contact.html">Contact</a></li>
+        </ul>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars fa-2x"></i>
+        </a>
+    </div>
+    <main>
+        <section class="container">
+            <div class="headline">
+                <h1 class=title>Burrito Spot</h1>
+                <h2 class="subtitle">Fresh Ingredients | Made to Order</h2>
+                <div class="bttn-container">
+                    <a href="./pages/contact.html"><button id="contact-bttn">Contact</button></a>
+                    <a href="#order-wrapper"><button id="order-bttn">Order</button></a>
+                </div>
+                <h3 class="explain">Now offering contactless curbside pickup, so you can eat quality, no matter what!</h3>
+            </div>
+        </section>
+        <section id="about" class="about-container">
+            <img class="chillies" src="./images/chilli.png" alt="chillies">
+            <img class="chillies-2" src="./images/chilli.png" alt="chillies">
+            <img class="beans" src="./images/beans.png" alt="beans">
+            <img class="beans-2" src="./images/beans.png" alt="beans">
+            <div class="about">
+                <h1>Best <mark>Burritos</mark> in America!</h1>
+                <h3> Here at Burrito Spot, we believe that great food starts 
+                    with great ingredients, that's why our ingredients are locally 
+                    sourced, and 100% organic. Our mission is to provide our communities
+                    with delicious healthy food, made ethically, from the farm to the table. So what
+                    are you waiting for? Happiness is just a burrito away.
+                </h3>
+            </div> 
+            <div class="contact-container">
+                <div class="contact-item">
+                    <h2>Our Hours</h2>
+                    <h3>Open seven days a week!</h3>
+                    <h3>&nbsp;</h3>
+                    <img src="./images/timetable.svg" alt="clock">
+                    <div>
+                        <span><strong>Mon - Thur: </strong> 
+                        11am - 10pm</span>
+
+                        <span><strong>Fri - Sun: </strong> 
+                        11am - 12am</span>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <h2>Location</h2>
+                    <h3>Located in beautiful downtown Anytown!</h3>
+                    <img src="./images/placeholder.png" alt="map">
+                    <span>555 Main St, Anytown US 55555</span>
+                </div>
+                <div class="contact-item">
+                    <h2>Contact Us</h2>
+                    <h3>Takeout? Questions? We'd love to hear from you!</h3>
+                    <img src="./images/contact.svg" alt="contact">
+                    <span>Our number: 555-555-5555</span>
+                </div>
+            </div>
+        </section>
+        <section id="order-wrapper"> 
+            <div id = "order-container">
+                <h1>Why Wait<mark>?</mark></h1>
+                <h2>Order Now</h2>
+                <ul class="order-items">
+                    <li class="order-item" id="burrito" ><img id="burrito-img" src="./images/burrito3.png" alt="">
+                    <h3>Burritos</h3>
+                    </li>
+                    <li class="order-item" id="taco"><img id="taco-img" src="./images/taco1.png" alt="">
+                    <h3>Tacos</h3>
+                    </li>
+                    <li class="order-item" id ="quesadilla"><img id="quesa-img" src="./images/quesadilla.png" alt="">
+                    <h3 >Quesa</br>dillas</h3>
+                    </li>
+                    <li class="order-item" id="bowl">
+                            <img id="bowl-img" src="./images/burrito-bowl.png" alt="">
+                    <h3>Bowls</h3>
+                    </li>
+                    <li class="order-item" id="nachos">
+                            <img id="nachos-img" src="./images/nacho2.png" alt="">
+                        <h3>Nachos</h3>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="footer">
+            <div class="social-container">
+                <ul class="social-list">
+                    <li class="social-item"><a href="#"><i class="fab fa-facebook fa-3x"></i></a></li>
+                    <li class="social-item"><a href="#"><i class="fab fa-twitter-square fa-3x"></i></a></li>
+                    <li class="social-item"><a href="#"><i class="fab fa-instagram fa-3x"></i></a></li>
+                    <li class="social-item"><a href="#"><i class="far fa-envelope fa-3x"></i></a></li>
+                </ul>
+                <div class="contact-footer">
+                    <h3>Address: 555 Main St, Anytown US, 55555</h3>
+                    <h3>Number: 555-555-5555</h3>
+                    <h3>Email: support@burriotspot.com</h3>
+                </div>
+            </div>
+            <div class="credit-container">
+                <h3><div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from 
+                    <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></h3>
+                <h3></h3>
+            </div>
+        </section>
+    </main>
+    
+        <form id="order-menu">
+            
+            <figure id="order-img">
+                <img id="menu-img" src="./images/nacho2.png" alt="nachos">
+                <figcaption><h2 id="order-header">Build Your Nachos</h2></figcaption>
+            </figure>
+            <label for="base">Pick Your Base</label>
+            <select name="base" id="base">
+                <option value="No Base">No Base</option>
+                <option value="White Rice">White Rice</option>
+                <option value="Brown Rice">Brown Rice</option>
+            </select>
+            <br><br>
+            <label for="protein">Protein or Veggie?</label>
+            <select name="protein" id="protein">
+                <option value="No Protein">No Protein</option>
+                <option value="Steak">Steak</option>
+                <option value="Chicken">Chicken</option>
+                <option value="Beef">Ground Beef</option>
+                <option value="Carne">Carne Asada</option>
+                <option value="Barbecoa">Barbecoa</option>
+                <option value="Veg">Roasted Vegetable</option>
+            </select>
+            <br><br>
+            <label for="bean">Beans</label>
+            <select name="bean" id="bean">
+                <option value="No Beans">No Beans</option>
+                <option value="Pinto Beans">Pinto</option>
+                <option value="Black Beans">Black</option>
+            </select>
+            <br><br>
+              <div id="checkboxes">
+                <h2>Toppings</h2>
+                <div id="toppings">
+                    <div class="topping">
+                        <input type="checkbox" id="topping" name="topping1" value="Guac">
+                        <label for="topping1">Guacamole</label><br>
+                    </div>
+                    <div class="topping">
+                        <input type="checkbox" id="topping" name="topping2" value="Sour Cream">
+                        <label for="topping2">Sour Cream</label><br>
+                    </div>
+                    <div class="topping">
+                        <input type="checkbox" id="topping" name="topping3" value="Corn">
+                        <label for="topping3">Corn</label><br>
+                    </div>
+                    <div class="topping">
+                        <input type="checkbox" id="topping" name="topping4" value="Cheese">
+                        <label for="topping4">Shredded Cheese</label><br>
+                    </div>
+                    <div class="topping">
+                        <input type="checkbox" id="topping" name="topping5" value="Lettuce">
+                        <label for="topping5">Lettuce</label><br>
+                    </div>
+                    <div class="topping">
+                        <input type="checkbox" id="topping" name="topping6" value="Hot Salsa">
+                        <label for="topping6">Hot Salsa</label><br>
+                    </div>
+                    <div class="topping">
+                        <input type="checkbox" id="topping" name="topping7" value="Medium Salsa">
+                        <label for="topping7">Medium Salsa</label><br>
+                    </div>
+                    <div class="topping">
+                        <input type="checkbox" id="topping" name="topping8" value="Mild Salsa">
+                        <label for="topping8">Mild Salsa</label><br>
+                    </div>
+                </div>
+              </div>
+            <div id="sub-bttn">Submit</div>
+            <h3>&nbsp;</h3>
+          </form>
+            <div id="modal">
+                <span id="exit">x</span>
+                <h2>Oh Boy!</h2>
+                <h3>You're one step closer to deliciousness! Anything else?</h3>
+                <div class="buttons">
+                    <a href="#order-wrapper"><div class="modal-bttn" id="add-order">Add to Order</div></a>
+                    <a href="./pages/checkout.html"><div class="modal-bttn" id="sub-order">Checkout</div></a>
+                </div>
+            </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./scripts/menu.js"></script>
+    <script src="./scripts/order.js"></script>
+</body>
+</html>

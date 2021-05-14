@@ -1,0 +1,263 @@
+$white: #e5e5e5;
+$black: rgb(73, 73, 73);
+$peach: #F8AB81;
+$green: #74AB7A;
+$brown: #a7805a;
+$blue:  #047D8E;
+
+@mixin format($width, $height, $direction, $justify){
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+    justify-content: $justify;
+    width: $width;
+    min-height: $height;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    border-style: border-box;
+}
+
+body{
+    font-family: 'Cormorant Garamond', serif;
+    color: $black;
+    overflow-x: hidden;
+}
+
+h1{
+    font-size: 25rem;
+    letter-spacing: 8px;
+}
+
+h2{
+    font-size: 5rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+p{
+    font-size: 1.5rem;
+    width: 30ch;
+}
+
+a{
+    font-size: 1.5em;
+    color: $white;
+    text-decoration: none;
+}
+
+mark{
+    color: $white; 
+    background-color: transparent;
+}
+
+nav{
+    @include format(100%, 5vh, row, flex-end);
+    padding: 1rem;
+    position: fixed; 
+    z-index: 2;
+}
+
+#link-container{
+    @include format(33.3%, none, row, space-around);
+    padding: 0 3rem 0 0;
+    .current{
+        border-bottom: 1px solid $white;
+    }
+}
+.nav-link{ 
+    padding: .1em;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    &:after{
+        content: "";
+        width:0%; 
+        height: 1px; 
+        background: $white; 
+    }
+    &:hover{
+        color: white;
+        &:after{
+            transition: .5s;
+            width: 100%;
+        }
+    }
+    a{
+        font-weight:900;
+    }
+}
+.icon{
+    display: none;
+}
+.current{
+    &:after{
+        display: none;
+    }
+}
+
+#hero-wrapper{
+    @include format(100%, 80vh, column, flex-end);
+    align-items: flex-start;
+    //background: orange;
+}
+
+header{
+    width: 93%;
+    text-align: center;
+    top: 0;
+    //padding: 2rem;
+    position: absolute;
+    z-index: 1;
+    //background: green;
+    h3{
+        margin-top: -2em;
+        width: 94.5%;
+        letter-spacing: 3px;
+    }
+}
+
+#hero-container{
+    @include format(100%, auto, row, flex-start);
+    //overflow-y: hidden;
+    //background:purple;
+}
+
+#info-container{
+    @include format(43.5%, 100vh, column, flex-end);
+    align-items: flex-end;
+    background: $white;
+    background-image: url(../images/frond.png);
+    background-position: top;
+    background-position-x: -18rem;
+    //background-position-x: -12rem;
+    //background-position-y: 10rem;
+    background-size: 1050px;
+    //background-size: cover;
+    //background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+#info-img{
+    @include format(100%, none, row, center);
+    padding: 1rem;
+    //background: yellow;
+    //flex-basis: baseline;
+    img{
+        width: 100%;
+        max-width: 250px;
+        min-width:180px;
+        height: none;
+        //padding: 0 0 0 2rem;
+    }
+    figcaption{
+        @include format(auto, 60vh, column, flex-end); 
+        align-items: flex-start;
+        padding-bottom: 7em;
+        //background: red;
+        text-align: left;
+        p{
+            max-width: 20ch;
+        }
+    }
+}
+
+#hero-img{
+    width: 56.5%;
+    //overflow: hidden; 
+    min-height: 100vh;
+    //background: orange;
+    background-image: url(../images/pexels-shiny-diamond-3762881.jpg);
+    background-size: 1200px;
+    background-repeat:no-repeat;
+    background-position-y: -24rem;
+    
+}
+
+#models-wrapper{
+    width: 100%;
+}
+#models-container{
+    @include format(100%, 100vh, row, center);
+    flex-wrap: wrap;
+    flex: 1 1 33.3%;
+}
+
+.model{
+    @include format(33.333%, 100vh, column, flex-end);
+    background-size: 700px;
+    transition: 1s;
+    &:hover{
+        background-size: 730px;
+        color: $black; 
+        transition: 1s;
+    }
+    h2{
+        opacity: 70%;
+        line-height: 80%;
+        margin-bottom: 2rem;
+    }
+}
+
+#moisturizer-model{
+    background-image: url(../images/pexels-shiny-diamond-3762871.jpg);
+
+}
+#facial-model{
+    background-image: url(../images/scrubbing.png);
+}
+#lotion-model{
+    background-image: url(../images/pexels-shiny-diamond-3762897.jpg);
+}
+
+#about-wrapper{
+    @include format(100%, 100vh, column, center);
+    background: linear-gradient($peach, $white);
+}
+
+#about-container{
+    @include format(100%, 100vh, column, center);
+    background-image: url(../images/wave.png);
+    //background-size: 1200px;
+    background-size: cover;
+    background-position-x: -35rem;
+    background-repeat: no-repeat;
+    h2{
+        color: $black;
+        margin-top: 3rem;
+    }
+}
+
+#about-img{
+    @include format(60%, auto, row, flex-end);
+    align-items: flex-end;
+    margin-top: 3rem;
+    //background: red;
+
+    figcaption{
+        max-width: 60ch;
+        min-width: 40ch;
+        //height: 60vh;
+        padding: 3rem;
+        margin: 3rem;
+        border-left: 3px solid $black;
+        display: flex;
+        align-items: center;
+    }
+}
+
+#about-moist{
+    //width: 100%;
+    max-width: 250px;
+    //min-width: 300px;
+    height: auto;
+}
+
+#bars{
+    color: red;
+}
